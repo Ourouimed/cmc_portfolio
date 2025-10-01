@@ -1,0 +1,21 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+.logo {
+  width: 279px;
+
+}
+
+:root {
+  --main-color : #FD6F00;
+
+}
+.menu ul li {
+  list-style: none;
+}
+
+.dw-btn {
+  background-color: var(--main-color) !important;
+  color: white !important;
+}
+
