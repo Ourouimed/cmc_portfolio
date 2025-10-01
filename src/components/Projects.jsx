@@ -1,38 +1,8 @@
 import { useState } from "react";
+import { projects } from "../lib/projects";
 
 export default function Projects() {
-    const projects = [
-        {
-            skill: 'Full stack',
-            title: 'eFootball25',
-            img: 'assets/projects/project1.png',
-            link : 'https://github.com/Ourouimed/efootball25',
-        },
-        {
-            skill: 'Frontend',
-            title: 'RabatBus',
-            img: 'assets/projects/project2.png',
-            link : 'https://rabat-bus.vercel.app/',
-        },
-        {
-            skill: 'Frontend',
-            title: 'Dream House',
-            img: 'assets/projects/project3.png',
-            link : 'https://ourouimed.github.io/dream-House/',
-        },
-        {
-            skill: 'Frontend',
-            title: 'AI Quiz Generator',
-            img: 'assets/projects/project4.png',
-            link : 'https://github.com/Ourouimed/react-quiz',
-        },
-        {
-            skill: 'Backend',
-            title: 'Todo List (Flask)',
-            img: 'assets/projects/project5.png',
-            link : 'https://github.com/Ourouimed/flask-todo',
-        },
-    ];
+   
 
     const [currTab, setCurrTab] = useState('All');
     const tabs = ['All', 'Frontend', 'Backend', 'Full stack'];
@@ -64,12 +34,12 @@ export default function Projects() {
     };
 
     return (
-        <section id="projects" className="text-center p-5">
+        <section id="projects" className="text-center">
             <h1>Projects</h1>
             <p className="mb-5">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta blanditiis saepe, rem voluptatibus natus harum perferendis commodi doloremque porro officiis!
+            Some of the work I’ve built recently
             </p>
-            <ul className="d-flex align-items-center justify-content-center gap-3">
+            <ul className="d-flex align-items-center justify-content-center gap-3 flex-wrap">
                 {tabs.map((t) => (
                     <li key={t} style={{ listStyle: 'none' }}>
                         <button

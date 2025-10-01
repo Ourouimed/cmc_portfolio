@@ -37,11 +37,9 @@ export default function TeamTestimonials() {
       <div className="container">
         <h1 className="text-center mb-3">Testimonials</h1>
         <p className="mb-5 text-center text-muted mx-auto" style={{ maxWidth: "700px" }}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta blanditiis saepe, rem voluptatibus natus harum
-          perferendis commodi doloremque porro officiis!
+          What our client says
         </p>
 
-        {/* Testimonial Card */}
         <div
           className="row align-items-center justify-content-center mx-auto p-4 shadow-sm rounded-4"
           style={{ backgroundColor: "#F8F8F8", maxWidth: "900px" }}
@@ -56,7 +54,7 @@ export default function TeamTestimonials() {
           </div>
 
           <div className="col-12 col-md-7">
-            <p className="fs-5 mb-3">{message}</p>
+            <p className="mb-3">{message}</p>
             <h5 className="fw-bold mb-0">Name</h5>
             <span className="text-muted">{name}</span>
           </div>
@@ -66,11 +64,10 @@ export default function TeamTestimonials() {
           {testimonials.map((_, i) => (
             <li key={i}>
               <button
-                className="btn p-0"
+                className="btn p-0 rounded-pill"
                 style={{
-                  width: "14px",
+                  width: "30px",
                   height: "14px",
-                  borderRadius: "50%",
                   background: currentIndex === i ? "var(--main-color)" : "#D9D9D9",
                   transition: "all 0.3s ease",
                 }}

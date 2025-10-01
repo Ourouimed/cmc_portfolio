@@ -1,8 +1,31 @@
+import { useEffect, useState } from "react";
 import { links } from "../lib/navLinks";
 
 export default function Header() {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    
+    
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
   return (
-    <header className="p-5">
+    <header className={`sticky-top z-3 bg-white ${isScrolled ? 'shadow border-b py-2' : 'py-4'}`} 
+      style={{
+        transition : '.3s ease-in-out'
+      }}>
+      <div className="container">
       <nav className="navbar navbar-expand-lg">
         <div className="container-fluid">
           <a href="/" className="navbar-brand fw-bold">
@@ -44,6 +67,8 @@ export default function Header() {
           </div>
         </div>
       </nav>
+      </div>
+      
     </header>
   );
 }

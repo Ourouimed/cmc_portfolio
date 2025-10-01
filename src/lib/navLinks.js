@@ -1,8 +1,8 @@
 export const links = [
     { name: 'Home', url: '#' },
-    { name: 'About me', url: '#' },
-    { name: 'Services', url: '#' },
-    { name: 'Projects', url: '#' },
-    { name: 'Testimonials', url: '#' },
-    { name: 'Contact', url: '#' },
+    { name: 'About me', url: '#about' },
+    { name: 'Services', url: '#services' },
+    { name: 'Projects', url: '#projects' },
+    { name: 'Testimonials', url: '#testimonials' },
+    { name: 'Contact', url: '#contact' },
   ];

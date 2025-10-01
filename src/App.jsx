@@ -8,15 +8,14 @@ import Services from "./components/Services";
 import Testimonials from "./components/Testimonials";
 export default function App (){
   return <>
+  <Header/>
   <div className="container">
-      <Header/>
       <Hero/>
       <About/>
       <Services/>
       <Projects/>
       <Testimonials/>
       <Contact/>
-      
   </div>
   <Footer/>
   

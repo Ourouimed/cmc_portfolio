@@ -1,13 +1,12 @@
 import { links } from "../lib/navLinks";
+import { social } from "../lib/social-media";
 
 export default function Footer() {
   return (
     <footer className="mt-5">
-      {/* Top Footer */}
       <div className="bg-light p-5 text-center">
         <h3 className="mb-4 fw-bold">Ourouimed</h3>
 
-        {/* Footer Nav */}
         <nav>
           <ul className="d-flex flex-wrap justify-content-center align-items-center gap-3 mb-4 list-unstyled">
             {links.map(({ name, url }) => (
@@ -17,6 +16,12 @@ export default function Footer() {
                 </a>
               </li>
             ))}
+          </ul>
+        </nav>
+
+        <nav>
+          <ul className="d-inline-flex justify-content-center align-items-center gap-2">
+                        {social.map(({icon : Icon ,  url} , i)=> <li key={i} style={{listStyle : 'none'}}><a className='text-black' href={url}><Icon/></a></li>)}
           </ul>
         </nav>
       </div>

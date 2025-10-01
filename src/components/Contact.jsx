@@ -1,12 +1,14 @@
 export default function Contact() {
   return (
-    <section id="contact" className="text-center p-5">
+    <section id="contact" className="text-center">
       <h1>Let's Work Together</h1>
       <p className="mb-5">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta blanditiis saepe, rem voluptatibus natus harum perferendis commodi doloremque porro officiis!
+      Reach out for collaborations, questions, or just to say hi!
+
+
       </p>
       
-      <div className="d-flex justify-content-center align-items-center gap-3">
+      <div className="d-flex justify-content-center align-items-center gap-3 flex-wrap">
         <input 
           type="text" 
           className="form-control" 

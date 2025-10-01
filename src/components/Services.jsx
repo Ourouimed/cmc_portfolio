@@ -1,38 +1,14 @@
+import { services } from "../lib/services";
+
 export default function Services() {
-    const services = [
-      {
-        title: "UI/UX",
-        icon: "assets/icons/icon1.svg",
-        description:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta blanditiis saepe, rem voluptatibus natus harum perferendis commodi doloremque porro officiis!",
-      },
-      {
-        title: "Web Design",
-        icon: "assets/icons/icon2.svg",
-        description:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta blanditiis saepe, rem voluptatibus natus harum perferendis commodi doloremque porro officiis!",
-      },
-      {
-        title: "App Design",
-        icon: "assets/icons/icon3.svg",
-        description:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta blanditiis saepe, rem voluptatibus natus harum perferendis commodi doloremque porro officiis!",
-      },
-      {
-        title: "Graphic Design",
-        icon: "assets/icons/icon4.svg",
-        description:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta blanditiis saepe, rem voluptatibus natus harum perferendis commodi doloremque porro officiis!",
-      },
-    ];
+    
   
     return (
-      <section id="services" className="p-5 text-center">
+      <section id="services" className="text-center">
           <h1 className="fw-bold mb-3">Services</h1>
           <p className="text-muted mb-5 mx-auto" style={{ maxWidth: "700px" }}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
-            blanditiis saepe, rem voluptatibus natus harum perferendis commodi
-            doloremque porro officiis!
+          This is Our Services That We Provide
+
           </p>
   
 

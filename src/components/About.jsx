@@ -1,14 +1,18 @@
+
+
 export default function About() {
     const skills = [
       { skill: 'React', range: 82 },
       { skill: 'Node', range: 40 },
       { skill: 'tailwind', range: 90 },
+      { skill: 'Bootstrap', range: 75 },
+      { skill: 'Php', range: 60 },
       { skill: 'javascript', range: 90 },
       { skill: 'express', range: 35 }
     ];
   
     return (
-      <section id="about" className="p-5">
+      <section id="about">
         <div className="row align-items-center">
           <div className="col-md-6 d-flex justify-content-center justify-content-md-start">
             <div
@@ -21,9 +25,7 @@ export default function About() {
           <div className="col-md-6">
             <h1 className="fw-bold">About me</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque distinctio
-              reprehenderit ullam odio facilis! Minus voluptas optio earum quo
-              voluptatum.
+            I’m a full stack web developer skilled in React, Next.js, Tailwind CSS, and backend technologies like Express, MySQL, Python, and PHP — focused on building fast, responsive, and scalable web applications.
             </p>
   
             {skills.map(({ skill, range }, i) => (
